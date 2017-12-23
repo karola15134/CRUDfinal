@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+    <head>
+        <title>User</title>
+    </head>
+    <body>
+        <h1> Added new user </h1>
+ 
+        <form>
+            <div>Name : <label th:text="${user.name}">   </label>  </div>
+            <div>Email : <label th:text="${user.email}">   </label>  </div>
+        </form>
+
+    </body>
+</html>

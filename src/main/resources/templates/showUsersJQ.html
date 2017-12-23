@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3">
+    <head>
+        <title>Spring Security Example </title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+    </head>
+    <body>
+        <table class="data-user-js" >
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+            </tr>
+        </table>
+
+        <script type="text/javascript">
+            $.get("http://localhost:8080/getUsers", function (data) {
+
+                $.each(data, function (i, user) {
+
+                    $(".data-user-js").append(
+                            "<tr><td>" + user.name + "</td>" +
+                            "<td>" + user.email + "</td></tr>");
+                });
+
+            });
+
+
+        </script>
+
+    </body>
+</html>

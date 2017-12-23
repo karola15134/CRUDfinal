@@ -1,0 +1,9 @@
+com\mycompany\mavenproject1\service\UserService.class
+com\mycompany\mavenproject1\service\UserRepository.class
+com\mycompany\mavenproject1\App.class
+com\mycompany\mavenproject1\controller\UserController.class
+com\mycompany\mavenproject1\conf\SecurityConfig.class
+com\mycompany\mavenproject1\controller\LoginController.class
+com\mycompany\mavenproject1\domain\User.class
+com\mycompany\mavenproject1\domain\Item.class
+com\mycompany\mavenproject1\dto\UserDto.class

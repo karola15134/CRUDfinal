@@ -28,6 +28,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
+@RequestMapping(path="back")
 public class UserController {
 
     final static Logger logger = Logger.getLogger(UserController.class.getName());
